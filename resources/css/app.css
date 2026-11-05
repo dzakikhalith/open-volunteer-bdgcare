@@ -1,0 +1,87 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+:root {
+    --color-dark-teal: #164A46;
+    --color-cherry-rose: #B5185F;
+    --color-light-yellow: #FEFFEF;
+    --color-lime-cream: #D0E86E;
+    --color-strong-cyan: #35C1C2;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1f2937;
+}
+
+.bg-dark-teal { background-color: var(--color-dark-teal) !important; }
+.text-dark-teal { color: var(--color-dark-teal) !important; }
+.border-dark-teal { border-color: var(--color-dark-teal) !important; }
+
+.btn-cherry {
+    background-color: var(--color-cherry-rose);
+    color: #fff;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 0.625rem 1.25rem;
+}
+.btn-cherry:hover {
+    filter: brightness(0.9);
+    color: #fff;
+}
+
+.btn-lime {
+    background-color: var(--color-lime-cream);
+    color: var(--color-dark-teal);
+    border: none;
+    border-radius: 0.75rem;
+    padding: 0.625rem 1.25rem;
+}
+.btn-lime:hover {
+    filter: brightness(0.95);
+    color: var(--color-dark-teal);
+}
+
+.btn-outline-dark-teal {
+    color: var(--color-dark-teal);
+    border: 1px solid var(--color-dark-teal);
+    border-radius: 0.75rem;
+    padding: 0.625rem 1.25rem;
+}
+.btn-outline-dark-teal:hover {
+    background-color: var(--color-dark-teal);
+    color: #fff;
+}
+
+.card-rounded {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(22, 74, 70, 0.08);
+    border: none;
+}
+
+.section-light {
+    background-color: var(--color-light-yellow);
+}
+
+.badge-status {
+    border-radius: 9999px;
+    padding: 0.35rem 0.75rem;
+    font-weight: 600;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #6b7280;
+}
+
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
